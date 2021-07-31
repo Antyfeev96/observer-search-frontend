@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
   items: [],
@@ -31,8 +31,10 @@ export const toolkitSlice = createSlice({
       };
     },
     changeSearchField(state, action) {
-      const search = action.payload;
-      state.search = search;
+      state.search = action.payload;
+      if (state.search === '') {
+        state.items = []
+      }
     }
   }
 })

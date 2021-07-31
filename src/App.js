@@ -1,9 +1,9 @@
 import './App.css';
-import Skills from './Components/Skills/Skills';
+import Services from './Components/Skills/Services';
 
 function App() {
   return (
-    <Skills />
+    <Services />
   );
 }
 
